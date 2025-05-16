@@ -40,9 +40,9 @@ let index = 10;
 let jump = 2;
 
 for (;;) {
-  console.log(index);
-  if (index == 4) break;
-  index -= jump;
+    console.log(index);
+    if (index == 4) break;
+    index -= jump;
 }
 
 /* Assignmnet 5 */
@@ -51,11 +51,11 @@ let letter = "a";
 let counter = 1;
 console.log(friends[0]);
 for (let i = 0; i < friends.length; i++) {
-  if (friends[i].toLowerCase().startsWith(letter)) continue;
-  else {
-    console.log(`${counter} => ${friends[i]}`);
-    counter++;
-  }
+    if (friends[i].toLowerCase().startsWith(letter)) continue;
+    else {
+        console.log(`${counter} => ${friends[i]}`);
+        counter++;
+    }
 }
 
 /* Assignment 6 */
@@ -79,41 +79,41 @@ let start = 0;
 let mix = [1, 2, 3, "A", "B", "C", 4];
 
 for (let i = start; i < mix.length; i++) {
-  if (typeof mix[i] === "number") console.log(mix[i]);
+    if (typeof mix[i] === "number") console.log(mix[i]);
 }
 
 /*
-  Loop Challenge
+    Loop Challenge
 */
 
 let myAdmins = ["Ahmed", "Osama", "Sayed" ,"Stop", "Samera"];
 let myEmployees = [
-  "Amgad",
-  "Samah",
-  "Ameer",
-  "Oka",
-  "Omar",
-  "Othman",
-  "Amany",
-  "Samia",
-  "Anwar",
+    "Amgad",
+    "Samah",
+    "Ameer",
+    "Oka",
+    "Omar",
+    "Othman",
+    "Amany",
+    "Samia",
+    "Anwar",
 ];
 let empCount = 1;
 let nAdmins =
-  myAdmins.indexOf("Stop") !== -1 ? myAdmins.indexOf("Stop") : myAdmins.length;
+    myAdmins.indexOf("Stop") !== -1 ? myAdmins.indexOf("Stop") : myAdmins.length;
 document.write(`<div>We Have ${nAdmins} Admins</div>
                 <hr>`);
 
 for (let i = 0; i < nAdmins; i++) {
-  document.write(`<div> The Admin for Team ${i + 1} is ${myAdmins[i]}
-                            <h3> Team Members : </h3>`);
-  for (let j = 0; j < myEmployees.length; j++) {
-    if (myAdmins[i][0] === myEmployees[j][0]) {
-      document.write(`<p> - ${empCount} ${myEmployees[j]} </p>`);
-      empCount++;
+    document.write(`<div> The Admin for Team ${i + 1} is ${myAdmins[i]}
+                                <h3> Team Members : </h3>`);
+    for (let j = 0; j < myEmployees.length; j++) {
+        if (myAdmins[i][0] === myEmployees[j][0]) {
+        document.write(`<p> - ${empCount} ${myEmployees[j]} </p>`);
+        empCount++;
+        }
     }
-  }
-  empCount = 1;
-  document.write(`</div>
-                    <hr>`);
+    empCount = 1;
+    document.write(`</div>
+                        <hr>`);
 }
